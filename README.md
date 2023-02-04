@@ -1,13 +1,21 @@
-# Blood Detection
+# White Blood Cell Classification
 
-Treinamento de um modelo de Deep Learning para detecção de células sanguíneas em imagens através do uso do Object Detection do Tensorflow. O modelo permite classficar as células em células vermelhas, células brancas e plaquetas. Além disso, é capaz de realizar a contagem dessas células presentes em uma imagem. O projeto foi desenvolvido para o meu TCC e além do modelo, também foi criado um protótipo com Streamlit.
+Treinamento de um modelo de Rede Neural Artifical Convolucional para classificação de células brancas em imagens de amostra de sangue através do uso do Sequencial, modelo do Tensorflow e Keras.
+O modelo permite classficar as células brancas em seus 5 principais tipos:
+* Basófilos
+* Eosinófilos
+* Linfócitos
+* Monócitos
+* Neutrófilos
 
-## Aplicando Deep Learning para Detecção de Células em Amostras De Sangue
+Para treinamento do modelo foi utilizado a base de dados públicada em [Acevedo - PBC](https://data.mendeley.com/datasets/snkd93bnjr/1).
 
-O projeto foi desenvolvido para o meu TCC do curso de Sistemas de Informação do IFSC Campus Caçador. O resultado desse trabalho me trouxe uma nota 10, assim como garantiu a minha formação. O trabalho completo pode ser conferido no link abaixo.
+Com um total de 17.092 imagens relacionadas a células brancas, todas  coletadas de pacientes sem patologias sanguíneas, por profissionais do Hospital das Clínicas de Barcelona utilizando equipamento especializado. O dataset já é rotulado em oito grupos: Neutrófilos, Eosinófilos, Basófilos, Linfócitos, Monócitos, Eritroblastos, Plaquetas e Granulócitos Imaturos. Cada rótulos corresponde a uma pasta que contém as imagens do tipo.
+O tamanho de cada imagem é de 360px x 363px, colorida e com formato JPG. Sendo o primeiro acervo público com grande quantidade de imagens de alta qualidade referentes a células sanguíneas
 
-[https://repositorio.ifsc.edu.br/handle/123456789/2501](https://repositorio.ifsc.edu.br/handle/123456789/2501)
+## Aplicando Deep Learning para classificação de Células em Amostras De Sangue
 
-## Preview
+O projeto foi desenvolvido como requisito para obtenção do grau de Bacharel em  Ciência da Computação da Universidade Federal da Fronteira Sul, campus Chapecó.
+## Prévia
 
-![Preview do Aplicativo](media/prototipo.png)
+![Preview do Aplicativo](media/prot_with_classification.png)
